@@ -34,14 +34,14 @@ const About = () => {
         </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
         {
-            aboutcard.map(()=>{
+            aboutcard.map((index)=>{
                 return (
-                  <div className="relative w-[300px] h-[200px] ">
+                  <div key={index} className="relative w-[300px] h-[200px] ">
                     {/* Image */}
                     <Image
                       src={p1}
                       alt="About Agriplus"
-                      className="w-full h-full object-cover  opacity-60  hover:opacity-65"
+                      className="w-full h-full object-cover  opacity-60  hover:opacity-100"
                     />
 
                     {/* Text Overlay */}
